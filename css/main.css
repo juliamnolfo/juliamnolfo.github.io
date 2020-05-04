@@ -208,7 +208,11 @@ a.down-arrow i {
 }
 
 .thisproject p {
-    width: 40%;
+    width: 70%;
+}
+
+.thisproject h5:hover {
+    color: #36587a;
 }
 
 .thisproject .small {
@@ -358,6 +362,7 @@ h5 {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     margin-bottom: 0px;
+    text-decoration: none;
 /*    padding-top: 20px;*/
 }
 
@@ -377,6 +382,10 @@ p {
     text-align: left;
     font-family: Avenir;
     font-size: 12px;
+}
+
+* {
+    text-decoration: none;
 }
 
 /* =================NAV================= */
