@@ -146,6 +146,45 @@ a.down-arrow i {
 /*    padding-right: 30%;*/
 }
 
+#social {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#social #instagram {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background: url(../img/instagram.png) 0 0;
+}
+
+#social #instagram:hover {
+    background: url(../img/instagram.png) 0 20px;
+}
+
+#social #linkedin {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background: url(../img/linkedin.png) 0 0;
+}
+
+#social #linkedin:hover {
+    background: url(../img/linkedin.png) 0 20px;
+}
+
+#social #facebook {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background: url(../img/facebook.png) 0 0;
+}
+
+#social #facebook:hover {
+    background: url(../img/facebook.png) 0 20px;
+}
 
 /* ================= WORK ================= */
 
@@ -328,14 +367,15 @@ h1 {
 }
 
 h2 {
-    color: white;
+    color: rgba(255,255,255,0.4);
     text-align: center; 
     font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
-    font-weight: 200;
+    font-size: 40px;
+    font-weight: 100;
     text-transform: uppercase;
-    letter-spacing: 2.7px;
+    letter-spacing: 10px;
     margin: 0px;
+    transform: scale(1,0.8);
 }
 
 h3 {
@@ -364,6 +404,14 @@ h5 {
     margin-bottom: 0px;
     text-decoration: none;
 /*    padding-top: 20px;*/
+}
+
+#portfolio .project h5 {
+    margin-top: 5px;
+}
+
+#portfolio .project p {
+    margin-top: 0px;
 }
 
 article {
