@@ -214,6 +214,206 @@ a.down-arrow i {
     opacity: 50%;
 }
 
+
+/* ================= PROJECTS ================= */
+
+#projects {
+     background-color: white;
+}
+
+.thisproject {
+    margin: 10%;
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+.thisproject p {
+    width: 70%;
+}
+
+h5:hover {
+    color: #36587a;
+}
+
+.thisproject .small {
+    width: 15%;
+    margin: 2% 2% 2% 0%;
+}
+
+.thisproject .medium {
+    width: 40%;
+    margin: 2% 2% 2% 0%;
+/*    display: block;*/
+}
+
+.thisproject .mediumcaption {
+    width: 40%;
+    margin: 2% 2% 0% 0%;
+/*    display: block;*/
+}
+
+.thisproject .mediumlarge {
+    width: 57.5%;
+    margin: 2% 0% 2% 0%;
+}
+
+.thisproject .large {
+    width: 82.5%;
+    margin: 2% 0% 2% 0%;
+}
+
+
+/* =================TYPOGRAPHY================= */
+
+@font-face {
+  font-family: Avenir;
+  font-weight: normal;
+  src: url('../fonts/Avenir.ttc') format('TTC');
+}
+
+h1 {
+    color: white;
+    text-align: center; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+    letter-spacing: 6px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+h2 {
+    color: rgba(255,255,255,0.4);
+    text-align: center; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0px;
+    transform: scale(1,0.8);
+}
+
+h3 {
+    color: #5b723f;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+h4 {
+    color: #04142D;
+    text-align: left; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    margin: 0px;
+}
+
+h5 {
+    color: #cccccc;
+    text-align: left; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    margin-bottom: 0px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+/*    padding-top: 20px;*/
+}
+
+#portfolio .project h5 {
+    margin-top: 5px;
+}
+
+#portfolio .project p {
+    margin-top: 0px;
+}
+
+article {
+    color: white; 
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 100; 
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+
+
+p {
+    color: #04142D; 
+    text-align: left;
+    font-family: Avenir;
+    font-size: 12px;
+}
+
+.thisproject p#captionleft {
+    margin: 0px;
+    font-size: 9px;
+}
+
+.thisproject p#captionright {
+    margin: 0px;
+    font-size: 9px;
+    position: relative;
+    left: 42.5%;
+/*    margin-top: -2.15%;*/
+    margin-top: -25px;
+}
+
+* {
+    text-decoration: none;
+}
+
+/* =================NAV================= */
+
+nav {
+    padding-top: 2px;
+    padding-bottom: 2px;
+/*    margin-bottom: 50px;*/
+    background-color: #04142D;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    padding: 0px;
+}
+
+nav ul li a {
+    color: #36587a; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+nav ul li #active {
+     color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li {
+    list-style-type: none;
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+
+
 /* ================= RESUME ================= */
 
 #resume #experience {
@@ -234,46 +434,59 @@ a.down-arrow i {
     border: 1px solid #04142D;
 }
 
-/* ================= PROJECTS ================= */
-
-#projects {
-     background-color: white;
-}
-
-.thisproject {
-    margin: 10%;
-    margin-bottom: 0px;
+#resume #download {
     background-color: white;
+    width: 100vw;
+    display: flex;
+    padding-bottom: 5%;
+    justify-content: center;
 }
 
-.thisproject p {
-    width: 70%;
-}
-
-.thisproject h5:hover {
+#resume #download h5 {
+    padding: 15px 30px 12px 30px;
+    background-color: #04142D;
     color: #36587a;
 }
 
-.thisproject .small {
-    width: 15%;
-    margin: 2% 2% 2% 0%;
+#resume #download h5:hover {
+    color: white;
 }
 
-.thisproject .medium {
-    width: 40%;
-    margin: 2% 2% 2% 0%;
-/*    display: block;*/
+/* =============Footer=============== */
+
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    background-color: #04142D;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.thisproject .mediumlarge {
-    width: 57.5%;
-    margin: 2% 0% 2% 0%;
+footer a {
+    color: #36587a; 
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
 }
 
-.thisproject .large {
-    width: 82.5%;
-    margin: 2% 0% 2% 0%;
+footer a:hover {
+    color: white;
 }
+
+
+
+
+
+
+
+
 
 /*
 .carousel {
@@ -345,165 +558,3 @@ a.down-arrow i {
     display: block;
 }
 */
-
-
-/* =================TYPOGRAPHY================= */
-
-@font-face {
-  font-family: Avenir;
-  font-weight: normal;
-  src: url('../fonts/Avenir.ttc') format('TTC');
-}
-
-h1 {
-    color: white;
-    text-align: center; 
-    font-family: 'Bebas Neue', cursive;
-    font-size: 70px;
-    letter-spacing: 6px;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0px;
-}
-
-h2 {
-    color: rgba(255,255,255,0.4);
-    text-align: center; 
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: 10px;
-    margin: 0px;
-    transform: scale(1,0.8);
-}
-
-h3 {
-    color: #5b723f;
-    font-size: 15px;
-    font-family: sans-serif;
-    font-weight: 800;
-}
-
-h4 {
-    color: #04142D;
-    text-align: left; 
-    font-family: 'Bebas Neue', cursive;
-    font-size: 30px;
-    font-weight: 200;
-    text-transform: uppercase;
-    letter-spacing: 2.7px;
-    margin: 0px;
-}
-
-h5 {
-    color: #cccccc;
-    text-align: left; 
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;
-    margin-bottom: 0px;
-    text-decoration: none;
-/*    padding-top: 20px;*/
-}
-
-#portfolio .project h5 {
-    margin-top: 5px;
-}
-
-#portfolio .project p {
-    margin-top: 0px;
-}
-
-article {
-    color: white; 
-    text-align: left;
-    font-family: sans-serif;
-    font-size: 12px;
-    font-weight: 100; 
-    line-height: 16px;
-    letter-spacing: 0.4px;
-}
-
-
-p {
-    color: #04142D; 
-    text-align: left;
-    font-family: Avenir;
-    font-size: 12px;
-}
-
-* {
-    text-decoration: none;
-}
-
-/* =================NAV================= */
-
-nav {
-    padding-top: 2px;
-    padding-bottom: 2px;
-/*    margin-bottom: 50px;*/
-    background-color: #04142D;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-
-nav ul {
-    padding: 0px;
-}
-
-nav ul li a {
-    color: #36587a; 
-    font-family: 'Bebas Neue', cursive;
-    font-size: 16px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-nav ul li #active {
-     color: white;
-}
-
-nav ul li a:hover {
-    color: white;
-}
-
-nav ul li {
-    list-style-type: none;
-    list-style: none;
-    display: inline;
-    padding: 10px;
-}
-
-/* =============Footer=============== */
-
-footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 0px;
-    background-color: #04142D;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-
-footer a {
-    color: #36587a; 
-    font-family: 'Bebas Neue', cursive;
-    font-size: 16px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 10px;
-}
-
-footer a:hover {
-    color: white;
-}
