@@ -237,12 +237,17 @@ h5:hover {
 
 .thisproject .small {
     width: 15%;
-    margin: 2% 2% 2% 0%;
+    margin: 2% 2% 0% 0%;
+}
+
+.thisproject .smallmedium {
+    width: 30%;
+    margin: 2% 2% 0% 0%;
 }
 
 .thisproject .medium {
     width: 40%;
-    margin: 2% 2% 2% 0%;
+    margin: 2% 2% 0% 0%;
 /*    display: block;*/
 }
 
@@ -254,12 +259,20 @@ h5:hover {
 
 .thisproject .mediumlarge {
     width: 57.5%;
-    margin: 2% 0% 2% 0%;
+    margin: 2% 0% 0% 0%;
 }
 
 .thisproject .large {
     width: 82.5%;
-    margin: 2% 0% 2% 0%;
+    margin: 2% 0% 0% 0%;
+}
+
+.thisproject video {
+    width: 82.5%;
+    margin: 2% 0% 0% 0%;
+}
+.thisproject iframe {
+    border: none;
 }
 
 
@@ -348,6 +361,14 @@ p {
     text-align: left;
     font-family: Avenir;
     font-size: 12px;
+}
+
+p a {
+    color: #cccccc;
+}
+
+p a:hover {
+    color: #04142D;
 }
 
 .thisproject p#captionleft {
