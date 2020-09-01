@@ -1,0 +1,374 @@
+html {
+    background-image: url("../img/backgroundred.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+ 
+    
+body {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    height: 100vh;
+}
+
+#banner {
+    display: none;
+}
+
+
+
+/******* GET AROUND ********/
+
+.getaround {
+    position: absolute;
+    top: 30px;
+    right: 37px;
+}
+
+.getaround a {
+    text-decoration: none;
+    font-family: 'Cormorant SC', serif;
+    font-size: 1em;
+    color: white;
+    margin: 4px;
+}
+
+.getaround a:hover {
+    color: #ffec98;
+}
+
+
+/***** NAVIGATION *******/
+
+.navigate {
+    border-radius: 50%;
+    background-color: white;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    margin: 1.25px;
+}
+
+.active {
+    border-radius: 50%;
+    background-color: #ffec98;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    margin: 1.25px;
+}
+
+/*4c5055*/
+
+nav a {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav {
+    margin: 15px;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+
+.navigate:hover {
+    background-color: #ffec98;
+}
+
+
+
+
+/******* CONTENT / RED BOX SECTION ********/
+
+
+#content {
+    background-color:rgba(161, 62, 59, .95);
+    height: 96%;
+    width: 35%;
+    padding: 20px;
+    position: relative;
+    left: 55%;
+    top: 0px;
+    bottom: 0px;
+    margin: 0px;
+    
+}
+
+#outline {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8%;
+    height: 88%;
+}
+
+
+.intro, #ingred, #step1, #step2, #step3, #step4, #step4, #step5, #step6, #step7, #step8, #step9, #step10 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* TYPOGRAPHY */
+
+h3 {
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    font-size: 2em;
+    margin-bottom: 0px;
+    align-self: center;
+}
+
+.intro p, #step1 p, #step2 p, #step3 p, #step4 p, #step5 p, #step6 p, #step7 p, #step8 p, #step9 p, #step10 p, #variations p {
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    line-height: 1.5em;
+    align-self: center;
+    height: 22%;
+}
+
+.intro p {
+    height: 34%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+/******* IMAGE STYLE / SIZING *********/
+
+
+.photo {
+    display: block;
+    height: 48%;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    margin-bottom: 1px;
+    align-self: center;
+
+}
+
+
+/******** ARROWS **********/
+
+.arrow1 {
+    display: none;
+}
+
+.arrow2 {
+    display: none;
+}
+
+
+
+
+
+
+
+/********* VARIATIONS PAGE ONLY *********/
+
+
+
+
+/* POSITIONING */
+
+#variations {
+    height: 60%;
+}
+
+
+/* ICONS */
+
+#allicons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: inline;
+}
+
+.icon img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.icon img:hover {
+    transform: rotate(35deg);
+}
+
+
+
+
+/* PSEDUO CLASS FOR ICONS */
+
+.varicontent div {
+    display: none;
+}
+
+.varicontent div:target {
+    display: block;
+}
+
+
+
+/* VARIATIONS STYLING */
+
+.varicontent {
+    height: 112%;
+}
+
+#pumpkin, #banana, #peanutbutter, #choclate, #redvelvet {
+    height: 100%;
+}
+
+.varicontent img {
+    height: 72%;
+    width: 100%;
+}
+
+.varicontent h3 {
+    margin-top: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********** MEDIA QUERY ***********/
+
+@media only screen and (max-width: 660px) { 
+    body {
+        background-color: #a23f3c;
+        background-image: none;
+    }
+    
+    
+
+/* FIXING BACKGROUND */
+#content {
+    height: 95.7%;
+    width: 100%;
+    position: static;
+    
+}
+    
+#outline {
+    height: 90%;
+    width: 90%;
+    border: 0px;
+    padding: 1px;
+    margin: 1px;
+}
+
+    
+/* NAVIGATION */
+
+.getaround{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+    
+.navigate, .active {
+    margin: 9px;
+}
+    
+nav {
+    position: relative;
+    left: 0%;
+}
+    
+.arrow2 img, .arrow1 img {
+    height: 20px;
+}
+
+.arrow1 {
+    display: inline;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    margin: 5px;
+}
+
+.arrow2 {
+    display: inline;
+    position: absolute;
+    top: 90%;
+    left: 53%;
+    margin: 5px;
+}
+
+.arrow1 img:hover, .arrow2 img:hover {
+    transform: scale(1.5);
+}
+
+    
+
+    
+/* IMAGE AND TYPE SIZES */
+    
+.intro img, #ingred img, #step1 img, #step2 img, #step3 img, #step4 img, #step5 img, #step6 img, #step7 img, #step8 img, #step9 img, #step10 img {
+    height: 20%;
+    position: relative;
+    left: 5%;
+    padding: 0px;
+    margin-top: 0px;
+}
+    
+h3 {
+    font-size: 1.5em;
+}
+    
+.intro p, #step1 p, #step2 p, #step3 p, #step4 p, #step5 p, #step6 p, #step7 p, #step8 p, #step9 p, #step10 p, #variations p {
+    padding-top: 0px;
+
+}
+    
+.varicontent img {
+    position: relative;
+    left: 6%;
+    height: 60%;
+    width: 90%;
+}
+    
+ .photo {
+    height: 48%;
+}
+   
+    
+
+    
+/* NO HOME BUTTON */
+    
+ 
+.home {
+    display: none;
+}    
+    
+    
+}

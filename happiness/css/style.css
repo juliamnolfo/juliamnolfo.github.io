@@ -1,0 +1,634 @@
+/* GENERAL STUFFY-STUFF */
+
+@font-face {
+    font-family: Beon;
+    src: url("../img/BeonMedium-6d51.otf") format("opentype");
+}
+
+* {
+    font-family: 'Beon', sans-serif;
+    font-weight: 400;
+    color: #070508;
+}
+
+/* #cbad5c */
+
+body {
+    background-color: #0e0903;
+/*
+    background-image: url("../img/51y+c8ZZYzL%20copy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+*/
+}
+
+
+
+
+
+
+/* FLEX BOXING THIS STUFF */
+
+#content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+/*border: 2px solid yellow; */
+    width: 160%;
+    height: 600px;
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+
+
+/* MORE POSITIONING OF HAPPINESSES AS WHOLES */
+
+#firecracker, #hold, #spark, #roar{
+    width: 60%;
+    padding: 0.5%;
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+/*    justify-content: center;*/
+    align-items: center;
+}
+
+
+#happiness1, #happiness2, #happiness3, #happiness4  {
+/*    position: relative;*/
+/*    right: -6%;*/
+
+}
+
+
+
+
+
+
+/* HAPPINESS INDIVIDUAL LETTERS POSITION AND STYLE */
+
+#fireh, #firea, #firep, #firep2, #firei, #firen, #firee, #fires, #fires2 {
+    display: inline-block;
+    position: relative;
+    left: 25%;
+    top: 120px;
+    font-size: 80px;
+    background-color: transparent;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+
+#holdh, #holda, #holdp, #holdp2, #holdi, #holdn, #holdn, #holde, #holds, #holds2 {
+    display: inline-block;
+    position: relative;
+    left: 25%;
+    top: 120px;
+    font-size: 80px;
+    font-weight: 900;
+    background-color: transparent;
+} 
+
+
+/* POSITIONING ALL THE SPARK LAYERS OMG */
+
+
+#sparkh, #sparka, #sparkp, #sparkp2, #sparki, #sparkn, #sparke, #sparks, #sparks2 {
+    display: inline-block;
+    position: relative;
+    left: 25%;
+    top: 120px;
+    font-size: 80px;
+    font-weight: 900;
+    background-color: transparent;
+    z-index: 2;
+}
+
+
+#hap2 {
+    position: relative;
+    left: 25%;
+    top: -989px;  
+}
+
+#hap3 {
+    position: relative;
+    left: 25%;
+    top: -65px;  
+}
+
+#hap4 {
+    position: relative;
+    top: -268px;
+    left: 25%;
+}
+
+#second1, #second2, #second3, #second4, #second5, #second6, #second7, #second8, #second9 {
+    display: inline-block;
+    position: relative ;
+    left: 0%;
+    top: 119px;
+    font-size: 80px;
+    font-weight: 900;
+    background-color: transparent;
+    z-index: 1;
+    color: #fffeff;
+}
+
+
+#last1, #last2, #last3, #last4, #last5, #last6, #last7, #last8, #last9 {
+    display: inline-block;
+    position: relative ;
+    left: 0%;
+    top: 214px;
+    font-size: 80px;
+    font-weight: 900;
+    background-color: transparent;
+    z-index: 1;
+    color: #fffeff;
+}
+
+/* #still1, #still2, #still3, #still4, #still5, #still6, #still7, #still8, #still9 { 
+    display: inline-block;
+    position: relative ;
+    left: 0%;
+    top: 120px;
+    font-size: 80px;
+    font-weight: 900;
+    background-color: transparent;
+    z-index: 1;
+
+} This is what the still Happiness would be styled as */
+
+
+/* SPARK LAYER OVER - ROAR */
+
+
+#roarh, #roara, #roarp, #roarp2, #roari, #roarn, #roare, #roars, #roars2 {
+    display: inline;
+    position: relative;
+    left: 25%;
+    top: 120px;
+    font-size: 80px;
+    font-weight: 900;
+    background-color: transparent;
+    padding-right: 0px;
+}
+
+
+
+
+
+/* ANIMATION SECTION BEGIN */
+
+
+
+
+
+
+/* TRANSITIONS / BASE STATES */
+
+#sparkh, #sparka, #sparkp, #sparkp2, #sparki, #sparkn, #sparke, #sparks, #sparks2 {
+    transition: ease all;
+    transition-duration: .3s;
+}
+
+#second1, #second2, #second3, #second4, #second5, #second6, #second7, #second8, #second9 {
+    transition: ease all;
+    transition-duration: .3s;
+    transition-delay: .2s;
+}
+
+#last1, #last2, #last3, #last4, #last5, #last6, #last7, #last8, #last9 {
+    transition: ease-in;
+    transition-duration: .3s;
+    transition-delay: .4s;
+}
+
+#happiness1, #holdh, #holda, #holdp, #holdp2, #holdi, #holdn, #holde, #holds, #holds2 {
+    transition: ease-in;
+    transition-duration: 2s;
+}
+
+#fireh, #firea, #firep, #firep2, #firei, #firen, #firee, #fires, #fires2{
+    transition: ease all;
+    transition-duration: .1s;
+}
+
+
+/* FRIRECRACKER ANIMATION */
+
+#happiness1:target #fireh {
+    transform: translateY(-160px) translateX(-160px) rotate(-140deg);
+}
+
+#happiness1:target #firea {
+    transform: translateY(-150px) translateX(-120px) rotate(-230deg);
+}
+
+#happiness1:target #firep {
+    transform: translateY(-170px) translateX(-75px) rotate(250deg);
+}
+
+#happiness1:target #firep2 {
+    transform: translateY(-140px) translateX(-40px) rotate(-360deg);
+}
+
+#happiness1:target #firei {
+    transform: translateY(-200px) translateX(0px) rotate(-280deg);
+}
+
+#happiness1:target #firen {
+    transform: translateY(-130px) translateX(50px) rotate(160deg);
+}
+
+#happiness1:target #firee {
+    transform: translateY(-185px) translateX(80px) rotate(250deg);
+}
+
+#happiness1:target #fires {
+    transform: translateY(-135px) translateX(130px) rotate(260deg);
+}
+
+#happiness1:target #fires2{
+    transform: translateY(-150px) translateX(175px) rotate(300deg);
+}
+
+
+
+/* HOLD ANIMATION */
+
+#happiness2:target #holdh {
+    transform: translateY(370px);
+}
+
+#happiness2:target #holda {
+    transform: translateY(340px);
+}
+
+#happiness2:target #holdp {
+    transform: translateY(390px);
+}
+
+#happiness2:target #holdp2 {
+    transform: translateY(340px);
+}
+
+#happiness2:target #holdi {
+    transform: translateY(370px);
+}
+
+#happiness2:target #holdn {
+    transform: translateY(330px);
+}
+
+#happiness2:target #holde {
+    transform: translateY(410px);
+}
+
+#happiness2:target #holds {
+    transform: translateY(360px);
+}
+
+#happiness2:target #holds2 {
+    transform: translateY(395px);
+}
+
+
+
+
+/* SPARKS ANIMATION */
+
+#happiness3:target #sparkh {
+    transform: translateY(70px) translateX(-160px) rotate(-1145deg);
+}
+
+#happiness3:target #sparka {
+      transform: translateY(280px) translateX(-265px) rotate(1300deg);
+}
+#happiness3:target #sparkp {
+     transform: translateY(-240px) translateX(-210px) rotate(-1250deg);
+}
+
+#happiness3:target #sparkp2 {
+     transform: translateY(395px) translateX(-145px) rotate(1090deg);
+}
+
+#happiness3:target #sparki {
+     transform: translateY(-250px) translateX(-130px) rotate(-1195deg);
+}
+
+#happiness3:target #sparkn {
+     transform: translateY(340px) translateX(80px) rotate(1210deg);
+}
+
+#happiness3:target #sparke {
+     transform: translateY(-230px) translateX(10px) rotate(-1068deg);
+}
+
+#happiness3:target #sparks {
+     transform: translateY(300px) translateX(180px) rotate(1142deg);
+}
+
+#happiness3:target #sparks2 {
+     transform: translateY(-100px) translateX(100px) rotate(-1093deg);
+}
+
+
+/* SECOND WAVE SPARKANIMATION */
+
+#happiness3:target #second1 {
+    transform: translateY(190px) translateX(-80px) rotate(-1045deg);
+}
+
+#happiness3:target #second2 {
+      transform: translateY(-50px) translateX(-180px) rotate(1180deg);
+}
+#happiness3:target #second3 {
+     transform: translateY(460px) translateX(-280px) rotate(-1044deg);
+}
+
+#happiness3:target #second4 {
+     transform: translateY(-260px) translateX(-370px) rotate(1012deg);
+}
+
+#happiness3:target #second5 {
+     transform: translateY(370px) translateX(-30px) rotate(-1104deg);
+}
+
+#happiness3:target #second6 {
+     transform: translateY(-210px) translateX(-90px) rotate(1067deg);
+}
+
+#happiness3:target #second7 {
+     transform: translateY(395px) translateX(150px) rotate(-1177deg);
+}
+
+#happiness3:target #second8 {
+     transform: translateY(-290px) translateX(75px) rotate(1021deg);
+}
+
+#happiness3:target #second9 {
+     transform: translateY(160px) translateX(150px) rotate(-1099deg);
+}
+
+
+/* THIRD WAVE SPARK ANIMATION */
+
+#happiness3:target #last1 {
+    transform: translateY(-150px) translateX(-170px) rotate(-1038deg);
+}
+
+#happiness3:target #last2 {
+      transform: translateY(365px) translateX(-155px) rotate(1055deg);
+}
+#happiness3:target #last3 {
+     transform: translateY(-280px) translateX(-100px) rotate(-1089deg);
+}
+
+#happiness3:target #last4 {
+     transform: translateY(480px) translateX(-50px) rotate(1250deg);
+}
+
+#happiness3:target #last5 {
+     transform: translateY(-275px) translateX(20px) rotate(-1128deg);
+}
+
+#happiness3:target #last6 {
+     transform: translateY(440px) translateX(350px) rotate(1062deg);
+}
+
+#happiness3:target #last7 {
+     transform: translateY(-314px) translateX(60px) rotate(-1091deg);
+}
+
+#happiness3:target #last8 {
+     transform: translateY(480px) translateX(-20px) rotate(1200deg);
+}
+
+#happiness3:target #last9 {
+     transform: translateY(-200px) translateX(100px) rotate(-1042deg);
+}
+
+
+/* ROAR ANIMATION*/
+
+#happiness4:target {
+    -webkit-animation: shake 2s;
+    animation: shake 2s;
+}
+
+
+@keyframes shake {
+  2% {transform: translate(0, 0) rotate(5deg) scale(1.1); }
+  4% {transform: translate(0, 0) rotate(6deg) scale(1.1); }
+  6% {transform: translate(0, 0) rotate(-6deg) scale(1.2); }
+  8% {transform: translate(0, 0) rotate(-7deg) scale(1.2); }
+  10% {transform: translate(0, 0) rotate(8deg) scale(1.3); }
+  12% {transform: translate(0, 0) rotate(9deg) scale(1.3); }
+  14% {transform: translate(0, 0) rotate(-9deg) scale(1.4); }
+  16% {transform: translate(0, 0) rotate(-9deg) scale(1.4); }
+  18% {transform: translate(0, 0) rotate(9deg) scale(1.5); }
+  20% {transform: translate(0, 0) rotate(9deg) scale(1.5); }
+  22% {transform: translate(0, 0) rotate(9deg) scale(1.6); }
+  24% {transform: translate(0, 0) rotate(-9deg) scale(1.6); }
+  26% {transform: translate(0, 0) rotate(9deg) scale(1.6); }
+  28% {transform: translate(0, 0) rotate(-9deg) scale(1.6); }
+  30% {transform: translate(0, 0) rotate(9deg) scale(1.6); }
+  32% {transform: translate(0, 0) rotate(-9deg) scale(1.6); }
+  34% {transform: translate(0, 0) rotate(8deg) scale(1.7); }
+  36% {transform: translate(0, 0) rotate(-8deg) scale(1.7); }
+  38% {transform: translate(0, 0) rotate(8deg) scale(1.7); }
+  40% {transform: translate(0, 0) rotate(-7deg) scale(1.7); }
+  42% {transform: translate(0, 0) rotate(7deg) scale(1.7); }
+  44% {transform: translate(0, 0) rotate(-6deg) scale(1.8); }
+  46% {transform: translate(0, 0) rotate(6deg) scale(1.8); }
+  48% {transform: translate(0, 0) rotate(-6deg) scale(1.8); }
+  50% {transform: translate(0, 0) rotate(5deg) scale(1.8); }
+  52% {transform: translate(0, 0) rotate(-5deg) scale(1.8); }
+  54% {transform: translate(0, 0) rotate(6deg) scale(1.8); }
+  56% {transform: translate(0, 0) rotate(-6deg) scale(1.8); }
+  58% {transform: translate(0, 0) rotate(6deg) scale(1.8); }
+  60% {transform: translate(0, 0) rotate(-6deg) scale(1.8); }
+  62% {transform: translate(0, 0) rotate(7deg) scale(1.7); }
+  64% {transform: translate(0, 0) rotate(-7deg) scale(1.7); }
+  66% {transform: translate(0, 0) rotate(8deg) scale(1.7); }
+  68% {transform: translate(0, 0) rotate(-8deg) scale(1.7); }
+  70% {transform: translate(0, 0) rotate(8deg) scale(1.7); }
+  72% {transform: translate(0, 0) rotate(-9deg) scale(1.7); }
+  74% {transform: translate(0, 0) rotate(9deg) scale(1.7); }
+  76% {transform: translate(0, 0) rotate(8deg) scale(1.7); }
+  78% {transform: translate(0, 0) rotate(-8deg) scale(1.7); }
+  80% {transform: translate(0, 0) rotate(7deg) scale(1.6); }
+  82% {transform: translate(0, 0) rotate(-7deg) scale(1.6); }
+  84% {transform: translate(0, 0) rotate(6deg) scale(1.6); }
+  86% {transform: translate(0, 0) rotate(6deg) scale(1.5); }
+  88% {transform: translate(0, 0) rotate(-6deg) scale(1.5); }
+  90% {transform: translate(0, 0) rotate(-6deg) scale(1.4); }
+  92% {transform: translate(0, 0) rotate(5deg) scale(1.3); }
+  94% {transform: translate(0, 0) rotate(5deg) scale(1.2); }
+  96% {transform: translate(0, 0) rotate(5deg) scale(1.2); }
+  98% {transform: translate(0, 0) rotate(-5deg) scale(1.1); }
+  0%, 100% {transform: translate(0, 0) rotate(0); } }
+
+
+
+
+/* END ANIMATION SECTION */
+
+
+
+
+
+/* STYLING THE LYRICS */
+#hold a, #firecracker a, #roar a, #spark a{ 
+    position: relative;
+    left: 35%;
+    top: 300px;
+    text-decoration: none;
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*
+
+ Just trying to position the lyrics prfectly 
+#hold a {
+    margin-left: 8%;
+}
+
+#spark a {
+    margin-left: 5%;
+}
+
+#roar a {
+    margin-left: 11%
+}
+*/
+
+
+
+/* LYRCS STYLES + HOVER STATES */
+.lyrics a{
+    border: .5px solid #cdb06a;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: #cdb06a;
+
+}
+
+
+/* LYRICS 2 IS FOR SPARK's LYRICS BECUASE THEY GET MOVED WITH ALL THE ANIMATION LAYERS */
+
+.lyrics2 a {
+    border: .5px solid #cdb06a;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 400;
+    font-family: sans-serif;
+    width: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: #cdb06a;
+}
+
+.lyrics2 {
+    position: relative;
+    bottom: 190px;
+}
+
+
+.lyrics a:hover{
+    background: #cdb06a;
+
+}
+
+.lyrics a:hover{
+    color: #ebd6ab;
+}
+
+
+
+/* FOOTER AND BELOW */
+
+footer {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    background: #cdb06a;
+    height: 3%;
+}
+
+#resetyo {
+    position: fixed;
+    bottom: 2%;
+    left: 1.5%;
+    
+}
+
+#resetyo a {
+    color: #0e0903;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#resetyo a:hover {
+    color: aliceblue;
+}
+
+#resetyo a img {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    top: 15px;
+}
+
+#attribute {
+    position: fixed;
+    bottom: 0.8%;
+    right: 2%;
+    color: #0e0903;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+.glow {
+  font-size: 80px;
+  color: #fffeff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fffeff, 0 0 15px #fffeff, 0 0 25px #ebd6ab, 0 0 35px #ebd6ab, 0 0 45px #ebd6ab, 0 0 55px #ebd6ab, 0 0 65px #ebd6ab;
+  }
+  
+  to {
+    text-shadow: 0 0 5px #fffeff, 0 0 15px #cdb06a, 0 0 25px #cdb06a, 0 0 35px #cdb06a, 0 0 45px #cdb06a, 0 0 55px #cdb06a, 0 0 65px #cdb06a;
+  }
+}
+
+
+/* css shakes   https://elrumordelaluz.github.io/csshake/  */

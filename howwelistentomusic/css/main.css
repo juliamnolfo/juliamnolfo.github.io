@@ -1,0 +1,145 @@
+ @font-face {
+
+     font-family: 'Corben' ;
+     src: url('../fonts/Corben-Bold.ttf') format('truetype');
+     font-weight: normal;   
+     font-style: normal;
+}
+
+/* ==============UNIVERSAL STYLES========= */
+
+body {
+    margin: 0;
+    align-content: center;
+    background-color: black;
+}
+
+
+/* =================TYPOGRAPHY================= */
+
+h1{
+    color: #e87148;
+    font-family: 'Corben', cursive;
+    font-size: 55px;
+    font-weight: bolder;
+}
+
+h2{
+    color: black;
+    font-family: 'Corben', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+
+#guitar h2 {
+    color: black;
+}
+
+#recordplayer h2 {
+    color: #e8bc8a;
+}
+
+#visualizer h2 {
+    color: #45a5f8;
+}
+
+footer h2 {
+    color: #45a5f8;  
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer h2:hover {
+    color: #e87148;
+}
+
+
+
+
+p{
+    color: black;
+    font-family: 'Play', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    width: 275px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 100px;
+}
+
+#heading p {
+    color: white;
+    width: 400px;
+}
+
+
+
+/* =================BODY================= */
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+
+
+iframe {
+    width: 1000px;
+    height: 700px;
+    border: none;
+    position: relative;
+    right: 0px;
+}
+
+
+/* ============ SECTIONS ============= */
+
+section {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+#heading {
+    height: 95vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#guitar {
+    background-color: #d19934;
+}
+
+#recordplayer {
+    background-color: #e87148;
+}
+
+#visualizer {
+    background-color: #006ca6;
+}
+
+
+
+section #text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+footer {
+    padding: 5%;
+}

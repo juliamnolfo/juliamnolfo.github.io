@@ -208,10 +208,13 @@ a.down-arrow i {
 
 #work #portfolio .project img {
     width: 100%;
+    opacity: 85%;
+    border: solid white 0.5px;
 }
 
 #work #portfolio .project img:hover {
-    opacity: 50%;
+    opacity: 100%;
+    border: solid #04142D 0.5px;
 }
 
 
