@@ -1,0 +1,66 @@
+
+<!-- hello! -->
+
+
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<!--<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>-->
+
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/pzx2nsy.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <title>programmable_poetry</title>
+
+  </head>
+  <body>
+      <script src="sketch.js"></script>
+      
+      <h1 id="titletext">programmable_poetry</h1>
+      <p id="about">
+          <i>programmable_poetry</i> is a collaborative poetry writing experience between human and computer, emphasizing the strengths of each party. computers are efficient at performing complex computations quickly while humans have a unique knowledge of creativity and emotion. choose a poet from the buttons below to get started writing with <i>programmable_poetry</i>.
+      </p>
+      
+    
+      <ul id="buttons">
+        <button id="loadfile1">allen ginsberg</button>
+        <button id="loadfile2">rupi kaur</button>
+        <button id="loadfile3">emily dickinson</button>
+        <button id="loadfile4">t.s. elliot</button>
+      </ul>
+      
+      <div id="writingscrheading">
+         <p id="instructions"> 
+             select from the randomly generated words on the left in order to create a poem on the right. click "generate" to generate more words, "undo" to undo the last action, and "line break" to insert a line break, click "finish" when you are finished. 
+         </p>
+          
+         <br>
+        
+          <div id="writingscr">
+            <button id="generatemore">generate</button>
+            <button id="undo">undo</button> 
+            <button id="linebreak">line break</button> 
+            <button id="printpoem">finish</button> 
+          </div>
+      
+      </div>
+      
+      <button id="startover"><</button>
+      
+      <button id="submitbutton">submit</button>
+      
+      <button id="americaexplain">what does this mean?</button>
+      
+      <button id= "download">print my poem</button>
+      
+      <button id="gallerybutton">go to gallery</button>
+      
+      <button id="homebutton">home</button>
+  
+
+</body></html>
