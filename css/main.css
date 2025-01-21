@@ -276,13 +276,6 @@ hr {
 .thisproject .medium {
     width: 46%;
     margin: 2% 2% 0% 0%;
-/*    display: block;*/
-}
-
-.thisproject .mediumcaption {
-    width: 45%;
-    margin: 2% 2% 0% 0%;
-/*    display: block;*/
 }
 
 .thisproject .mediumlarge {
@@ -303,6 +296,17 @@ hr {
     border: none;
 }
 
+.thisproject .two-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.thisproject .two-column p {
+    width: 46%;
+    margin: 1% 2% 0% 0%;
+}
 
 /* ============= CONTACT =============== */
 
@@ -444,28 +448,6 @@ p.light {
     font-family: Avenir;
     font-size: 1em;
 }
-
-.thisproject p#captionleft {
-    font-style: italic;
-    font-family: Avenir;
-    font-size: 0.75em;
-    margin: 0px;
-}
-
-.thisproject p#captionright {
-    font-style: italic;
-    font-family: Avenir;
-    margin: 0px;
-    font-size: 0.75em;
-    position: relative;
-    left: 48.5%;
-    margin-top: -2.5%;
-}
-
-
-
-
-
 
 
 
