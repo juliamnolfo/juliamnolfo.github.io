@@ -67,6 +67,28 @@ nav ul li:hover {
 }
 
 
+/*
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        background-color: #04142d;
+        position: fixed;
+        right: -80vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0px;
+        display: block;
+    }
+}
+*/
+
 
 /* ================= HOMEPAGE ================= */
 
@@ -78,6 +100,13 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+    }
+    
 }
 
 #homepage #splash {
