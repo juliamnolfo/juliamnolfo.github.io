@@ -98,6 +98,7 @@ section {
     padding: 10vh 10vw 10vh 10vw;
     margin: 0px;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: center;
 }
@@ -220,15 +221,17 @@ section img {
 
 
 .social {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5%;
+/*    margin-bottom: 5%;*/
 }
 
 
 .social .social_link {
-    width: 47%;
+    width: 100%;
     display: flex;
     align-items: center;
     margin: 3% 0% 3% 0%;
@@ -498,6 +501,7 @@ footer .social {
     top: 8vh;
     width: 50%;
     transform:translateX(-2%);
+    display: flex;
 }
 
 footer .social .fa {
