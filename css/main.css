@@ -147,15 +147,17 @@ section img {
 
 #homepage #grid {
     height: 100%;
-    width: 40%;
-    display: flex;
+    width: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto;
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
-    grid-gap: 4%;
+    grid-gap: 5%;
 }
 
 #homepage #grid a {
-    width: 30%;
+    width: 100%;
     aspect-ratio: 1/1;
 }
 
