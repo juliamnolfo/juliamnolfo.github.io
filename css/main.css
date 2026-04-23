@@ -98,7 +98,6 @@ section {
     padding: 10vh 10vw 10vh 10vw;
     margin: 0px;
     display: flex;
-    align-items: center;
     flex-direction: row;
     justify-content: center;
 }
@@ -131,6 +130,7 @@ section {
 
 
 section img {
+
     height: 100%;
     width: auto;
     border-radius: 5px;
@@ -279,6 +279,10 @@ hr {
 
 #portfolio h4 {
     margin: 0;
+}
+
+#portfolio img {
+/*    display:none;*/
 }
 
 
