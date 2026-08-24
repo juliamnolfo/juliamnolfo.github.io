@@ -455,7 +455,14 @@ article {
 }
 
 
-p.dark {
+p.dark{
+    color: #04142d; 
+    text-align: left;
+    font-family: Avenir;
+    font-size: 1em;
+}
+
+summary {
     color: #04142d; 
     text-align: left;
     font-family: Avenir;
