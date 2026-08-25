@@ -273,16 +273,12 @@ hr {
     border: 0.5px solid #04142d;
 }
 
-#portfolio img:hover {
+#projects img:hover {
     opacity: 75%;
 }
 
-#portfolio h4 {
+#projects h4 {
     margin: 0;
-}
-
-#portfolio img {
-/*    display:none;*/
 }
 
 
@@ -290,7 +286,7 @@ hr {
 
 
 .thisproject {
-    margin: 10%;
+    margin: 5% 10% 5% 10%;
     background-color: white;
 }
 
