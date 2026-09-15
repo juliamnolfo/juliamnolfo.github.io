@@ -216,6 +216,16 @@ section img {
     #homepage #logo {
         margin-top: 15%;
     }
+    
+    #about img {
+        border-radius: 100%;
+        border: 1px solid #04142d;
+        width: 50%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: top;
+        margin-bottom: 3%;
+    }
 }
 
 /* ================= BUTTON ================= */
@@ -264,6 +274,10 @@ section img {
     .button, #contact .button {
         width: auto;
     } 
+    
+    .button-light {
+        align-self: center;
+    }
 }
 
 /* ================= SOCIAL ================= */
@@ -305,6 +319,19 @@ section img {
     border-bottom: 1px solid #04142d;
 }
 
+
+@media only screen and (max-width: 600px) {
+    #contact-details .social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .social .social_link {
+        margin-left: 10%;
+    }
+}
+
 /* ================= WORK ================= */
 
 .thumbnail {
@@ -342,6 +369,8 @@ img.mobile-move {
         margin: 0px;
         flex-direction: column;
         padding: 15% 2% 15% 2%;
+        align-content: center;
+        align-items: center;
     }
     
     section img {
@@ -622,7 +651,7 @@ p.light {
 
 @media only screen and (max-width: 600px) {
     h1 {
-      font-size: 4em;  
+        font-size: 4em;  
     }
     
     h2 {
@@ -636,7 +665,7 @@ p.light {
         text-align: center;
     }
     
-    p.dark_right, p.dark, #projects h4 {
+    p.dark_right, p.dark, #projects h4, h3, h3.light {
         text-align: center;
         text-wrap: pretty;
     }
@@ -859,4 +888,28 @@ footer nav ul li:hover {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    #slideshow {
+        margin: 3%;
+    }
+    
+    .text {
+        bottom: 0px;
+        width: 98%;
+    }
+    
+    .dot {
+        height: 8px;
+        width: 8px;
+    }
+    
+    .prev, .next {
+        font-size: 10px;
+        padding: 10px;
+    }
+    
 }
