@@ -781,9 +781,13 @@ footer nav ul li:hover {
     overflow: hidden;
 }
 
+.slideshow-container img:hover {
+    opacity: 75%;
+}
+
 /* Hide the images by default */
 .mySlides {
-/*  display: none;*/
+  display: none;
 }
 
 /* Next & previous buttons */
