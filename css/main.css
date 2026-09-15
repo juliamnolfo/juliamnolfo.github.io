@@ -114,12 +114,17 @@ nav ul li:hover {
         justify-content: center;
     }
     
+    nav ul #active {
+        border-bottom: none;
+    }
+    
     nav ul li {
         padding: 15%;
     }
     
-    nav ul #active {
-        border-bottom: none;
+    
+    nav ul li a {
+        font-size: 1.5em;
     }
 }
 
