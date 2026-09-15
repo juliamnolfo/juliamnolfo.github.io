@@ -66,28 +66,62 @@ nav ul li:hover {
     border-bottom: 1.5px solid #daddd8;
 }
 
+#splash .fa {
+    display: none;
+}
 
-/*
+
 @media only screen and (max-width: 600px) {
+    
+    #splash .fa {
+        display: block;
+        font-size: 2em;
+        color: #daddd8;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    
     nav {
         display: none;
-        width: 100vw;
+        
+        flex-direction: column;
         height: 100vh;
+        width: 100vw;   
         background-color: #04142d;
-        position: fixed;
-        right: -80vw;
+/*
+        background-image: url(../img/background4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+*/
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    
+    nav:target {  
+        display: flex;
+    }
+    
+    nav ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        width: 50%;
+        align-content: center;
         align-items: center;
+        justify-content: center;
     }
     
     nav ul li {
-        margin: 0px;
-        display: block;
+        padding: 15%;
+    }
+    
+    nav ul #active {
+        border-bottom: none;
     }
 }
-*/
 
 
 /* ================= HOMEPAGE ================= */
@@ -102,12 +136,6 @@ section {
     justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
-    section {
-        flex-direction: column;
-    }
-    
-}
 
 #homepage #splash {
     height: 60vh;
@@ -174,6 +202,16 @@ section img {
 }
 
 
+@media only screen and (max-width: 600px) {
+    
+    #homepage #splash {
+        height: 30vh;
+    }
+    
+    #homepage #logo {
+        margin-top: 15%;
+    }
+}
 
 /* ================= BUTTON ================= */
 
@@ -215,6 +253,12 @@ section img {
 .button-light:hover {
     background-color: #daddd8;
     color: #04142d; 
+}
+
+@media only screen and (max-width: 600px) {
+    .button, #contact .button {
+        width: auto;
+    } 
 }
 
 /* ================= SOCIAL ================= */
@@ -279,6 +323,44 @@ hr {
 
 #projects h4 {
     margin: 0;
+}
+
+img.mobile-move {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+        
+    section {
+        height: auto;
+        width: 96vw;
+        margin: 0px;
+        flex-direction: column;
+        padding: 15% 2% 15% 2%;
+    }
+    
+    section img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .thumbnail {
+        display: none;
+    }
+    
+    .description {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    
+    img.mobile-move  {
+        display: block;
+    }
+    
+    img.mobile-hide {
+        display: none;
+    }
 }
 
 
@@ -379,6 +461,44 @@ hr {
     border: 3px solid #04142d;
 }
 
+@media only screen and (max-width: 600px) {
+    
+    section#contact {
+        display: flex;
+        align-items: center;
+        height: 70%;
+        width: 88%;
+        padding: 6%;
+        margin: 5% 0%;
+    }
+    
+    form#contact-form {
+        width: 100%;
+    }
+    
+    .contact-inputs {
+        width: auto;
+        margin: 2% 0%;
+        padding: 5%;
+    }
+    
+    #contact textarea {
+        height: 30vh;
+        width: auto;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+/*
+    
+    #contact textarea {
+        height: 30vh;
+        width: 100%;
+    }
+*/
+}
+
 
 /* ================= TYPOGRAPHY ================= */
 
@@ -386,6 +506,10 @@ hr {
   font-family: Avenir;
   font-weight: normal;
   src: url('../fonts/Avenir.ttc') format('TTC');
+}
+
+p {
+    text-wrap: pretty;
 }
 
 h1 {
@@ -491,6 +615,29 @@ p.light {
     font-size: 1em;
 }
 
+@media only screen and (max-width: 600px) {
+    h1 {
+      font-size: 4em;  
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    #projects h4 {
+        font-size: 2em;
+        word-wrap: break-word;
+        margin-top: 5%;
+        text-align: center;
+    }
+    
+    p.dark_right, p.dark, #projects h4 {
+        text-align: center;
+        text-wrap: pretty;
+    }
+    
+}
+
 
 
 /* ============= FOOTER =============== */
@@ -582,3 +729,24 @@ footer nav ul li:hover {
         text-shadow: 3px 3px #36587a;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+    footer nav {
+        display: none;
+    }
+    
+    footer .social {
+        width: 100%;
+        transform: none;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        top: 0;
+    }
+}
+
