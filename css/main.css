@@ -271,7 +271,7 @@ section img {
 }
 
 @media only screen and (max-width: 600px) {
-    .button, #contact .button {
+    .button, #contact .button, .thisproject .button-dark {
         width: auto;
     } 
     
@@ -457,6 +457,33 @@ img.mobile-move {
 .thisproject .two-column p {
     width: 46%;
     margin: 1% 2% 0% 0%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .thisproject {
+        margin: 12% 2% 12% 2%;
+    }
+    
+    .thisproject .small, .thisproject.smallmedium, .thisproject .medium, .thisproject .mediumlarge, .thisproject .large {
+        width: 100%;
+        margin: 4% 0% 0% 0%;
+    }
+    
+    .thisproject hr {
+        width: 95vw;
+    }
+    
+    .thisproject video {
+        width: 100%;
+    }
+    
+    .thisproject iframe {
+        width: 100%;
+        height: fit-content;
+    }
+    
 }
 
 /* ============= CONTACT =============== */
@@ -658,6 +685,10 @@ p.light {
         font-size: 2em;
     }
     
+    h4 {
+        font-size: 2em;
+    }
+    
     #projects h4 {
         font-size: 2em;
         word-wrap: break-word;
@@ -668,6 +699,15 @@ p.light {
     p.dark_right, p.dark, #projects h4, h3, h3.light {
         text-align: center;
         text-wrap: pretty;
+    }
+    
+    .thisproject p {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .thisproject h3 {
+        text-align: left;
     }
     
 }
