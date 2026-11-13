@@ -696,7 +696,7 @@ p.light {
         text-align: center;
     }
     
-    p.dark_right, p.dark, #projects h4, h3, h3.light {
+    p.dark_right, p.dark, p.light, #projects h4, h3, h3.light {
         text-align: center;
         text-wrap: pretty;
     }
@@ -816,6 +816,7 @@ footer nav ul li:hover {
     
     footer .social {
         width: 100%;
+        height: fit-content;
         transform: none;
         position: relative;
         display: flex;
