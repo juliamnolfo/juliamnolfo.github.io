@@ -1,5 +1,11 @@
 /* ==============UNIVERSAL STYLES========= */
 
+@font-face {
+  font-family: Avenir;
+  font-weight: normal;
+  src: url('../fonts/Avenir.ttc') format('TTC');
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -239,7 +245,7 @@ section img {
     margin: 3% 0%;
     text-align: center;
     color: #daddd8; 
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-size: 1em;
     letter-spacing: 0.25em;
     font-weight: bold;
@@ -280,7 +286,7 @@ section img {
     }
 }
 
-/* ================= SOCIAL ================= */
+/* ================= SOCIAL ON ABOUT PAGE ================= */
 
 
 .social {
@@ -506,7 +512,7 @@ img.mobile-move {
     height: 10%;
     border: 1.5px solid #04142d;
     outline: none;
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     color: black;
     border-radius: 5px;
     padding: 3%;
@@ -563,12 +569,6 @@ img.mobile-move {
 
 /* ================= TYPOGRAPHY ================= */
 
-@font-face {
-  font-family: Avenir;
-  font-weight: normal;
-  src: url('../fonts/Avenir.ttc') format('TTC');
-}
-
 p {
     text-wrap: pretty;
 }
@@ -576,7 +576,7 @@ p {
 h1 {
     color: #daddd8;
     text-align: center; 
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     text-transform: uppercase;
     line-height: 0.8em;
     font-size: 6em;
@@ -588,7 +588,7 @@ h1 {
 h2 {
     color: #36587a;
     text-align: center; 
-    font-family: 'Avenir', sans-serif;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-size: 3em;
     font-weight: 800;
     text-transform: lowercase;
@@ -598,7 +598,7 @@ h2 {
 
 h3 {
     font-size: 2em;
-    font-family: 'Avenier', sans-serif;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
     margin: 0px;
@@ -616,7 +616,7 @@ h3.light {
 h4 {
     color: #04142d;
     font-size: 2.5em;
-    font-family: 'Avenier', sans-serif;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-weight: 800;
     margin: 0px;
 }
@@ -629,7 +629,7 @@ h4.right {
 article {
     color: white; 
     text-align: left;
-    font-family: sans-serif;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-size: 12px;
     font-weight: 100; 
     line-height: 16px;
@@ -640,21 +640,21 @@ article {
 p.dark{
     color: #04142d; 
     text-align: left;
-    font-family: Avenir;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-size: 1em;
 }
 
 summary {
     color: #04142d; 
     text-align: left;
-    font-family: Avenir;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-size: 1em;
 }
 
 p.dark_right {
     color: #04142d; 
     text-align: left;
-    font-family: Avenir;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-size: 1em;
     text-align: right;
 }
@@ -672,7 +672,7 @@ p a:hover {
 p.light {
     color: white; 
     text-align: right;
-    font-family: Avenir;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-size: 1em;
 }
 
@@ -893,7 +893,7 @@ footer nav ul li:hover {
 .text {
     color: #daddd8; 
     text-align: center;
-    font-family: Avenir;
+    font-family: 'Avenir', 'Helvetica', sans-serif;
     font-size: 1em;
     position: absolute;
     bottom: 85%;
