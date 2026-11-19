@@ -954,3 +954,21 @@ footer nav ul li:hover {
     }
     
 }
+
+
+/* ============= 404 ERROR PAGE =============== */
+
+
+#error {
+    height: 80vh;
+    width: 80vw;
+    padding: 10vh 10vw 10vh 10vw;
+    margin: 0px;
+    background-image: url(../img/background4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
