@@ -10,56 +10,56 @@
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/Avenir-Black.woff2') format('WOFF2');
+    src: url('../fonts/Avenir-Black.woff2') format('WOFF2'), url('../fonts/Avenir-Black.ttf') format('TTF');
     font-style: normal;
     font-weight: 800;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/Avenir-BlackOblique.woff2') format('WOFF2');
+    src: url('../fonts/Avenir-BlackOblique.woff2') format('WOFF2'), url('../fonts/Avenir-BlackOblique.ttf') format('TTF');
     font-style: italic;
     font-weight: 800;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/Avenir-Heavy.woff2') format('WOFF2');
+    src: url('../fonts/Avenir-Heavy.woff2') format('WOFF2'), url('../fonts/Avenir-Heavy.ttf') format('TTF');
     font-style: normal;
     font-weight: 700;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/Avenir-HeavyOblique.woff2') format('WOFF2');
+    src: url('../fonts/Avenir-HeavyOblique.woff2') format('WOFF2'), url('../fonts/Avenir-HeavyOblique.ttf') format('TTF');
     font-style: italic;
     font-weight: 700;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/Avenir-Medium.woff2') format('WOFF2');
+    src: url('../fonts/Avenir-Medium.woff2') format('WOFF2'), url('../fonts/Avenir-Medium.ttf') format('TTF');
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/Avenir-MediumOblique.woff2') format('WOFF2');
+    src: url('../fonts/Avenir-MediumOblique.woff2') format('WOFF2'), url('../fonts/Avenir-MediumOblique.ttf') format('TTF');
     font-style: normal;
     font-weight: 600;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/Avenir-Book.woff2') format('WOFF2');
+    src: url('../fonts/Avenir-Book.woff2') format('WOFF2'), url('../fonts/Avenir-Book.ttf') format('TTF');
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/Avenir-BookOblique.woff2') format('WOFF2');
+    src: url('../fonts/Avenir-BookOblique.woff2') format('WOFF2'), url('../fonts/Avenir-BookOblique.ttf') format('TTF');
     font-style: italic;
     font-weight: 400;
 }
