@@ -393,6 +393,10 @@ section img {
         justify-content: center;
     }
     
+    #contact-details img {
+        display: none;
+    }
+    
     .social .social_link {
         margin-left: 10%;
     }
@@ -747,6 +751,10 @@ p.light {
     
     h4 {
         font-size: 2em;
+    }
+    
+    p.dark_right, p.dark, p.light {
+        font-size: 1em;
     }
     
     #projects h4 {
