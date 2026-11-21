@@ -10,9 +10,59 @@
 
 @font-face {
     font-family: Avenir;
-    src: url('../fonts/Avenir-Roman-12.ttf') format('TTF')
+    src: url('../fonts/Avenir-Black.woff2') format('WOFF2');
+    font-style: normal;
+    font-weight: 800;
 }
 
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/Avenir-BlackOblique.woff2') format('WOFF2');
+    font-style: italic;
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/Avenir-Heavy.woff2') format('WOFF2');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/Avenir-HeavyOblique.woff2') format('WOFF2');
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/Avenir-Medium.woff2') format('WOFF2');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/Avenir-MediumOblique.woff2') format('WOFF2');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/Avenir-Book.woff2') format('WOFF2');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/Avenir-BookOblique.woff2') format('WOFF2');
+    font-style: italic;
+    font-weight: 400;
+}
 
 /* ==============UNIVERSAL STYLES========= */
 
@@ -57,7 +107,7 @@ nav ul {
 nav ul li a {
     color: #daddd8; 
     font-family: 'Avenir', sans-serif;
-    font-size: 1em;
+    font-size: 1.15em;
     letter-spacing: 0.25em;
     font-weight: bold;
     text-transform: uppercase;
@@ -256,7 +306,7 @@ section img {
     text-align: center;
     color: #daddd8; 
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1em;
+    font-size: 1.15em;
     letter-spacing: 0.25em;
     font-weight: bold;
     text-transform: uppercase;
@@ -526,7 +576,7 @@ img.mobile-move {
     color: black;
     border-radius: 5px;
     padding: 3%;
-    font-size: 1em;
+    font-size: 1.15em;
 }
 
 #contact textarea {
@@ -589,7 +639,7 @@ h1 {
     font-family: 'Avenir', 'Helvetica', sans-serif;
     text-transform: uppercase;
     line-height: 0.8em;
-    font-size: 6em;
+    font-size: 7em;
     letter-spacing: 6px;
     font-weight: 800;
     margin: 0px;
@@ -599,7 +649,7 @@ h2 {
     color: #36587a;
     text-align: center; 
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: 800;
     text-transform: lowercase;
     letter-spacing: 0.25em;
@@ -607,7 +657,7 @@ h2 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 2.25em;
     font-family: 'Avenir', 'Helvetica', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
@@ -625,7 +675,7 @@ h3.light {
 
 h4 {
     color: #04142d;
-    font-size: 2.5em;
+    font-size: 4em;
     font-family: 'Avenir', 'Helvetica', sans-serif;
     font-weight: 800;
     margin: 0px;
@@ -651,21 +701,21 @@ p.dark{
     color: #04142d; 
     text-align: left;
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 summary {
     color: #04142d; 
     text-align: left;
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 p.dark_right {
     color: #04142d; 
     text-align: left;
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
     text-align: right;
 }
 
@@ -683,7 +733,7 @@ p.light {
     color: white; 
     text-align: right;
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -761,7 +811,7 @@ footer .social .fa:hover {
 footer h6 {
     color: #daddd8; 
     font-family: 'Avenir', sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
     letter-spacing: 0.25em;
     font-weight: bold;
     text-transform: uppercase;
@@ -904,7 +954,7 @@ footer nav ul li:hover {
     color: #daddd8; 
     text-align: center;
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1em;
+    font-size: 1.25em;
     position: absolute;
     bottom: 85%;
     width: 30%;
