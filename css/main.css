@@ -679,7 +679,7 @@ h3.light {
 
 h4 {
     color: #04142d;
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Avenir', 'Helvetica', sans-serif;
     font-weight: 800;
     margin: 0px;
@@ -705,21 +705,21 @@ p.dark{
     color: #04142d; 
     text-align: left;
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 summary {
     color: #04142d; 
     text-align: left;
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 p.dark_right {
     color: #04142d; 
     text-align: left;
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.15em;
     text-align: right;
 }
 
@@ -737,7 +737,7 @@ p.light {
     color: white; 
     text-align: right;
     font-family: 'Avenir', 'Helvetica', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -819,7 +819,7 @@ footer .social .fa:hover {
 footer h6 {
     color: #daddd8; 
     font-family: 'Avenir', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.15em;
     letter-spacing: 0.25em;
     font-weight: bold;
     text-transform: uppercase;
